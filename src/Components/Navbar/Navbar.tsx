@@ -23,9 +23,9 @@ const Navbar = () => {
         </div>
         <div className="nav-menu d-flex justify-center align-item-center g-2">
           <a className="nav-link" href="#home">{translations.Home}</a>
-          <a className="nav-link" href="#About">{translations.AboutUs}</a>
-          <a className="nav-link" href="#Services">{translations.Services}</a>
-          <a className="nav-link" href="#Contact">{translations.Contact}</a>
+          <a className="nav-link" href="#WhyChooseUs">{translations.AboutUs}</a>
+          <a className="nav-link" href="#ServicesPages">{translations.Services}</a>
+          <a className="nav-link" href="#contact">{translations.Contact}</a>
         </div>
         <div className="book">
           <a href="#contact">{translations.BookNow}</a>

@@ -11,7 +11,7 @@
 .luxury-navbar {
     font-family: var(--font-family);
     background: var(--background-gradient);
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-bottom: 2px solid var(--secondary-color);
     position: sticky;
     top: 0;

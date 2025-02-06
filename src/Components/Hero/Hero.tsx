@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   const scrollToNextSection = () => {
-    const targetSection = document.getElementById('featuredSection');
+    const targetSection = document.getElementById('contact');
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }

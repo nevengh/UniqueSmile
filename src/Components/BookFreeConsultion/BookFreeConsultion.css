@@ -10,12 +10,25 @@
 .BookFreeConsultion .book{
     background: none;
     border: 1px solid var(--white-bs);
-    color: white;
+    /* color: white; */
     text-align: center;
+    border-radius: 0;
+}
+.BookFreeConsultion .book a{
+    color: white;
 }
 .BookFreeConsultion-text{
     color: var(--white-bs);
     font-family: var(--Tajwal-Font);
     letter-spacing: 2px;
     font-size: 40px;
+}
+@media(max-width:767px){
+    .BookFreeConsultion-text{
+        text-align: center;
+        letter-spacing: normal;
+    }
+    .BookFreeConsultion{
+        gap: 15px;
+    }
 }

@@ -72,6 +72,13 @@
 a{
   text-decoration: none;
 }
+
+#ServicesPages,
+#WhyChooseUs,
+#contact
+ {
+  scroll-margin-top: 120px; /* Adjust this value based on your header height */
+}
 @media (min-width: 640px) {
   .container {
     padding: 24px; /* Increased padding for small screens and above */
