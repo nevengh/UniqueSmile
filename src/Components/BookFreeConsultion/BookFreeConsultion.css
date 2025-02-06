@@ -1,34 +1,51 @@
-.BookFreeConsultion{
+.BookFreeConsultion {
     margin-top: 50px;
     background-color: var(--beig-bs);
     padding: 20px;
 }
-.BookFreeConsultion .BookFreeConsultion-call{
+
+.BookFreeConsultion .BookFreeConsultion-call {
     background-color: var(--white-bs);
     padding: 10px 20px;
+    color: #333; /* نص داكن على خلفية بيضاء */
+    font-weight: bold;
 }
-.BookFreeConsultion .book{
-    background: none;
-    border: 1px solid var(--white-bs);
-    /* color: white; */
+
+.BookFreeConsultion .book {
+    background-color: var(--primary-bs); /* خلفية رئيسية لتحسين التباين */
+    border: none;
+    color: white;
     text-align: center;
-    border-radius: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
 }
-.BookFreeConsultion .book a{
+
+.BookFreeConsultion .book:hover {
+    background-color: var(--secondary-bs); /* لون مختلف عند التمرير */
     color: white;
 }
-.BookFreeConsultion-text{
-    color: var(--white-bs);
+
+.BookFreeConsultion .book a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.BookFreeConsultion-text {
+    color: #222; /* نص داكن لتحسين التباين مع خلفية فاتحة */
     font-family: var(--Tajwal-Font);
     letter-spacing: 2px;
     font-size: 40px;
 }
-@media(max-width:767px){
-    .BookFreeConsultion-text{
+
+@media (max-width: 767px) {
+    .BookFreeConsultion-text {
         text-align: center;
         letter-spacing: normal;
     }
-    .BookFreeConsultion{
+
+    .BookFreeConsultion {
         gap: 15px;
     }
 }

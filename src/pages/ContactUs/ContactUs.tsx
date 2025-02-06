@@ -25,19 +25,19 @@ const ContactUs = () => {
 
             <div className="first-row d-flex justify-center g-1">
               <div className="input-group">
-                <label htmlFor="phone">Phone Number</label>
-                <input type="tel" id="phone" />
+                <label htmlFor="phone">Phone Number*</label>
+                <input type="tel" id="phone" required/>
               </div>
 
               <div className="input-group">
                 <label htmlFor="date">Choose Date</label>
-                <input type="date" id="date" />
+                <input type="date" id="date" required />
               </div>
             </div>
 
             <div className="input-group">
-              <label htmlFor="service">Choose Service</label>
-              <select id="service">
+              <label htmlFor="service">Choose Service*</label>
+              <select id="service" required>
                 <option value="">Select a service</option>
                 <option value="service1">Service 1</option>
                 <option value="service2">Service 2</option>
@@ -47,9 +47,9 @@ const ContactUs = () => {
 
             <div className="input-group">
               <label htmlFor="message" className="mt-2">
-                Message
+                Message*
               </label>
-              <textarea id="message"></textarea>
+              <textarea id="message" required></textarea>
             </div>
 
             <div className="submit-row">

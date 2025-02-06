@@ -34,7 +34,7 @@ const Hero = () => {
         <h1>Your Smile, Our Commitment</h1>/
         <p className='tooth-icon'><FaTooth color='#fff' /></p>
         <div className="hero-book">
-          <a href="/contact">Book Your Appointment</a>
+          <a href="/contact" aria-label='Link to the Form'>Book Your Appointment</a>
         </div>
       </div>
       <div className="hero_arrow" onClick={scrollToNextSection}>

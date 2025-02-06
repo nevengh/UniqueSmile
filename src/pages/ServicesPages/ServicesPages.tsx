@@ -1,6 +1,6 @@
 import './ServicesPages.css'
 
-import derma from '../../assets/inner_image_06.jpg'
+import derma from '../../assets/resized.jpg'
 import ServiceCard from '../../Components/ServiceCard/ServiceCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

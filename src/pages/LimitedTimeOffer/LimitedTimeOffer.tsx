@@ -29,7 +29,7 @@ const LimitedTimeOffer: React.FC = () => {
         50% off your first consultation. Hurry up, the offer ends soon!
       </p>
       <div className="countdown-timer">{formatTime(timeLeft)}</div>
-      <a href="#contact" className="cta-button">Claim Your Discount Now!</a>
+      <a href="#contact" className="cta-button" aria-label='Link to the Form'>Claim Your Discount Now!</a>
       
     </div>
   );

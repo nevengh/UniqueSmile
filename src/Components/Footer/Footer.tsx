@@ -44,11 +44,11 @@ const Footer = () => {
 
       {/* Social icons */}
       <div className="social-icons">
-        <a href="#Facebook"><FaFacebook /></a>
-        <a href="#Twitter"><FaTwitter /></a>
-        <a href="#LinkedIn"><FaLinkedin /></a>
-        <a href="#YouTube"><FaYoutube /></a>
-        <a href="#Instagram"><FaInstagram /></a>
+        <a href="#Facebook" aria-label="Visit Unique Smile Clinic Facebook Profile"><FaFacebook /></a>
+        <a href="#Twitter" aria-label="Visit Unique Smile Clinic Twitter Profile"><FaTwitter /></a>
+        <a href="#LinkedIn" aria-label="Visit Unique Smile Clinic LinkedIn Profile"><FaLinkedin /></a>
+        <a href="#YouTube" aria-label="Visit Unique Smile Clinic YouTube Profile"><FaYoutube /></a>
+        <a href="#Instagram" aria-label="Visit Unique Smile Clinic Instagram Profile"><FaInstagram /></a>
       </div>
 
       {/* Footer Bottom */}

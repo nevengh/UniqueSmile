@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import './Navbar.css';
-import uniqueSmile from '../../assets/uniquesmile.png'
+import uniqueSmile from '../../assets/uniquesmileResize.png'
 import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
@@ -36,10 +36,10 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="mobile-menu">
-          <a className="nav-link" href="#home" onClick={closeMenu}>{translations.Home}</a>
-          <a className="nav-link" href="#About"  onClick={closeMenu}>{translations.AboutUs}</a>
-          <a className="nav-link" href="#Services"  onClick={closeMenu}>{translations.Services}</a>
-          <a className="nav-link" href="#Contact"  onClick={closeMenu}>{translations.Contact}</a>
+          <a className="nav-link" href="#home" aria-label='Link to the home section' onClick={closeMenu}>{translations.Home}</a>
+          <a className="nav-link" href="#About" aria-label='Link to the About section' onClick={closeMenu}>{translations.AboutUs}</a>
+          <a className="nav-link" href="#Services" aria-label='Link to the Services section' onClick={closeMenu}>{translations.Services}</a>
+          <a className="nav-link" href="#Contact" aria-label='Link to the Contact section'  onClick={closeMenu}>{translations.Contact}</a>
         </div>
       )}
     </div>

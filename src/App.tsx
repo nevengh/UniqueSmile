@@ -1,8 +1,5 @@
 import './App.css'
-// import BeforeAndAfter from './Components/BeforeAndAfter/BeforeAndAfter'
-import BookFreeConsultion from './Components/BookFreeConsultion/BookFreeConsultion'
 import CountersData from './Components/countersData/CountersData'
-
 import Footer from './Components/Footer/Footer'
 import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
@@ -11,6 +8,7 @@ import WhatsAppBtn from './Components/WhatsAppBtn/WhatsAppBtn'
 import { LanguageProvider } from './LanguageContext'
 import ContactUs from './pages/ContactUs/ContactUs'
 import LimitedTimeOffer from './pages/LimitedTimeOffer/LimitedTimeOffer'
+import OurDoctor from './pages/OurDoctor/OurDoctor'
 import ServicesPages from './pages/ServicesPages/ServicesPages'
 import Testimonial from './pages/Testimonial/Testimonial'
 import WhyChooseUs from './pages/WhyChooseUs/WhyChooseUs'
@@ -28,9 +26,10 @@ const App = () => {
         <div id='WhyChooseUs'>
           <WhyChooseUs/>
         </div>
-        <div id='BookFreeConsultion'>
-          <BookFreeConsultion/>
+        <div id='OurDoctor'>
+          <OurDoctor/>
         </div>
+
         <div id="LimitedTimeOffer">
           <LimitedTimeOffer/>
         </div>

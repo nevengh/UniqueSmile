@@ -75,7 +75,8 @@ a{
 
 #ServicesPages,
 #WhyChooseUs,
-#contact
+#contact,
+#OurDoctor
  {
   scroll-margin-top: 120px; /* Adjust this value based on your header height */
 }
