@@ -1,0 +1,21 @@
+.BookFreeConsultion{
+    margin-top: 50px;
+    background-color: var(--beig-bs);
+    padding: 20px;
+}
+.BookFreeConsultion .BookFreeConsultion-call{
+    background-color: var(--white-bs);
+    padding: 10px 20px;
+}
+.BookFreeConsultion .book{
+    background: none;
+    border: 1px solid var(--white-bs);
+    color: white;
+    text-align: center;
+}
+.BookFreeConsultion-text{
+    color: var(--white-bs);
+    font-family: var(--Tajwal-Font);
+    letter-spacing: 2px;
+    font-size: 40px;
+}

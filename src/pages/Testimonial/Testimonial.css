@@ -1,0 +1,11 @@
+.testimonial-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

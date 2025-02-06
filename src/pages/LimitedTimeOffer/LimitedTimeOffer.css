@@ -1,0 +1,120 @@
+.limited-time-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8e5e5;
+    border: 2px solid #d9534f;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.offer-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer-details {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.countdown-timer {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d9534f;
+    background-color: #fff;
+    border: 2px solid #d9534f;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b52c2b;
+}
+
+.lead-capture-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #d9534f;
+}
+
+.submit-button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #b52c2b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .limited-time-offer {
+        padding: 20px;
+    }
+
+    .offer-title {
+        font-size: 28px;
+    }
+
+    .offer-details {
+        font-size: 16px;
+    }
+
+    .countdown-timer {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+}

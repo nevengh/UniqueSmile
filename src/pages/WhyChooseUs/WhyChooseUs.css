@@ -1,0 +1,17 @@
+.WhyChooseUs {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.WhyChooseUs_Container {
+
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.WhyChooseUs_Heading{
+    font-family: var(--libre-baskerville-Font);
+    font-family: 45px;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+            /* Fonts */
+
+  --Tajwal-Font:"Tajawal", serif;
+  --libre-baskerville-Font: "Libre Baskerville", serif;
+  --Garamond:"EB Garamond", serif;
+
+            /* Colors */
+  --primary-bs:#0e676f;
+  --primary-hover:#0a575e;
+  --secondary-bs:#dddeb6;
+  --white-bs:#ffffff;
+  --black-bs:#000000;
+  --beig-bs:#e5c477;
+  --beig-hover:#edc76e;
+  --bg-marble: #f7f5f2;
+  --text-dark: #333;
+  --accent-gold: #b8916d; 
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Open Sans', sans-serif;
+  
+}
+.m-1{
+  margin-top: 50px;
+}
+.d-flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-arround{
+  justify-content: space-around;
+}
+.align-item-center{
+  align-items: center;
+}
+.flex-coloumn{
+  flex-direction: column;
+}
+.align-item-start{
+  align-items: start;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.g-1{
+  gap: 10px;
+}
+.g-2{
+  gap: 15px;
+}
+.g-3{
+  gap: 20px;
+}
+/* Container.css */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px; /* Default padding for small screens */
+}
+a{
+  text-decoration: none;
+}
+@media (min-width: 640px) {
+  .container {
+    padding: 24px; /* Increased padding for small screens and above */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 32px; /* Further increased padding for large screens */
+  }
+}

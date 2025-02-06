@@ -1,0 +1,117 @@
+
+
+.Footer {
+    background: var(--bg-marble);
+    padding: 80px 30px;
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    text-align: center;
+}
+
+.Footer-Container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 40px;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 24px;
+    color: var(--accent-gold);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-title {
+    font-size: 18px;
+    color: var(--accent-gold);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    font-size: 16px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.contact-item-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.contact-item-numbers a{
+    color: #3c3c3c;
+    transition: all ease-in-out .3s
+}
+.contact-item-numbers a:hover{
+    color: #1f1e1e;
+}
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Footer bottom links */
+.Footer-Bottom {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Footer-Container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .Footer-Bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

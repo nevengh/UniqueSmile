@@ -1,0 +1,54 @@
+.CardTestimonial {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Image Container */
+.profile_img_container {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_img {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Content Section */
+.CardTestimonial_content {
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.comment {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.CardTestimonial_name {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: bold;
+}

@@ -1,0 +1,48 @@
+.WhyChooseUs_Counters {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.CounterCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CounterCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CounterCard_Icon {
+    font-size: 40px;
+    color: var(--primary-color, #007bff);
+    margin-bottom: 10px;
+}
+.CounterCard_Icon svg{
+    fill: var( --accent-gold);
+}
+.CounterCard_Count {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0;
+}
+
+.CounterCard_Label {
+    font-size: 16px;
+    color: #555;
+}

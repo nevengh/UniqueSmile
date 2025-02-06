@@ -1,0 +1,46 @@
+.before-and-after {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+  }
+  
+  .before-and-after img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .before-and-after .before-after-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #ff6347;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .before-and-after .before-after-handle:hover {
+    background: #ff4500;
+  }
+  
+  .before-and-after .before-after-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  

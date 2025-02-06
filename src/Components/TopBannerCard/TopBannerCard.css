@@ -1,0 +1,30 @@
+/* .top-banner-card-svg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--black-bs);
+    padding: 10px;
+} */
+/* .top-banner-card-svg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+ .top-banner-card-svg svg{
+    font-size: 30px;
+    fill: #edc76e;
+ }
+.top-banner-card-info{
+    border-left: 1px solid var(--black-bs);
+    padding-left: 10px;
+}
+.top-banner-card-name{
+    font-family: var(--Tajwal-Font);
+}
+.top-banner-card-id{
+    cursor: pointer;
+    color: var( --beig-hover);
+    font-family: var(--Garamond);
+    font-size: 18px;
+    font-weight: 600;
+}

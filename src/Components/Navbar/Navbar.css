@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #0d0d0d;
+    --secondary-color: #d4af37; /* Gold color */
+    --text-color: #f0f0f0;
+    --hover-color: #b8860b; /* Gold hover color */
+    --background-gradient: linear-gradient(135deg, #1a1a1a, #333);
+    --font-family: 'Playfair Display', serif;
+    --transition-speed: 0.4s;
+}
+
+.luxury-navbar {
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    padding: 15px 30px;
+    border-bottom: 2px solid var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.brand-logo img {
+    width: 80px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width var(--transition-speed) ease, left var(--transition-speed) ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    transition: all var(--transition-speed) ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.book:hover {
+    background: var(--hover-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Burger menu icon */
+.burger {
+    display: none;
+    font-size: 26px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color var(--transition-speed);
+}
+
+.burger:hover {
+    color: var(--hover-color);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.mobile-menu a {
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
