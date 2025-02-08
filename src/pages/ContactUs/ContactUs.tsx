@@ -1,13 +1,45 @@
+import { useState } from "react";
 import "./ContactUs.css";
 
+// Define an interface for sub-service options
+interface SubServiceOption {
+  value: string;
+  label: string;
+}
+
 const ContactUs = () => {
+  const [, setSelectedService] = useState<string>("");
+  const [subServiceOptions, setSubServiceOptions] = useState<SubServiceOption[]>([]);
+
+  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const service = e.target.value;
+    setSelectedService(service);
+
+    // Update sub-service options based on the selected service
+    if (service === "Dental") {
+      setSubServiceOptions([
+        { value: "Teeth Whitening", label: "Teeth Whitening" },
+        { value: "Cleaning", label: "Cleaning" },
+        { value: "Veneers", label: "Veneers" },
+        { value: "Hollywood Smile", label: "Hollywood Smile" },
+        { value: "Implant", label: "Implant" },
+      ]);
+    } else if (service === "Dermatology") {
+      setSubServiceOptions([
+        { value: "Laser", label: "Laser" },
+      ]);
+    } else {
+      setSubServiceOptions([]);
+    }
+  };
+
   return (
     <div className="ContactUs m-1">
-      <div className="ContactUs_Heading d-flex justify-center align-center flex-coloumn">
+      <div className="ContactUs_Heading d-flex justify-center align-center flex-column">
         <h4>SCHEDULE AN APPOINTMENT</h4>
         <h1>TREAT YOURSELF</h1>
       </div>
-      <div className="ContactUs_Conatiner">
+      <div className="ContactUs_Container ">
         {/* Form Section */}
         <div className="form-container">
           <form>
@@ -26,7 +58,7 @@ const ContactUs = () => {
             <div className="first-row d-flex justify-center g-1">
               <div className="input-group">
                 <label htmlFor="phone">Phone Number*</label>
-                <input type="tel" id="phone" required/>
+                <input type="tel" id="phone" required />
               </div>
 
               <div className="input-group">
@@ -37,13 +69,27 @@ const ContactUs = () => {
 
             <div className="input-group">
               <label htmlFor="service">Choose Service*</label>
-              <select id="service" required>
+              <select id="service" required onChange={handleServiceChange}>
                 <option value="">Select a service</option>
-                <option value="service1">Service 1</option>
-                <option value="service2">Service 2</option>
-                <option value="service3">Service 3</option>
+                <option value="Dental">Dental</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Service3">Service 3</option>
               </select>
             </div>
+
+            {/* Sub-Service Dropdown */}
+            {subServiceOptions.length > 0 && (
+              <div className="input-group">
+                <label htmlFor="subService">Choose Sub-Service*</label>
+                <select id="subService" required>
+                  {subServiceOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
 
             <div className="input-group">
               <label htmlFor="message" className="mt-2">
